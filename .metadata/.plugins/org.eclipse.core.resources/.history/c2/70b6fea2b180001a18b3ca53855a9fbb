@@ -1,0 +1,28 @@
+package maximum;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Student student = new Student( "A" , 1);
+		Student student1 = new Student( "A" , 1);
+		Student student2 = new Student( "A" , 1);
+		Student student3 = new Student( "A" , 1);
+		Set<Student> sSet  = new HashSet<Student>();
+		sSet.add(student3);
+		sSet.add(student2);
+		sSet.add(student1);
+		sSet.add(student);
+		for (Student s : sSet)
+		{
+			System.out.println(s.getName());
+			System.out.println(s.getId());
+		}
+
+	}
+
+}

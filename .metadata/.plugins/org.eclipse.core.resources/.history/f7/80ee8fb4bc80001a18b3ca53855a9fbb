@@ -1,0 +1,33 @@
+package maximum;
+
+import java.math.BigDecimal;
+
+public class AngleMeasurement {
+	
+	public void calculateAngle(int hourhand , int minHand)
+	{
+		
+	}
+
+	
+	public Double getMinHandPosition(int minHand)
+	{
+		Double val =0.00;
+	
+		val =  6.00 * minHand;
+		
+		return val;
+	}
+	
+	public Double getHrHandPosition(int hrHand , int minHand)
+	{
+		Double val =0.00;
+	
+		val =  (6.00 * hrHand) +  minHand/12.00;
+		
+		return val;
+	}
+	
+	
+
+}
